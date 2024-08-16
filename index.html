@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Board Game Purchase</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>
+            How to get a MooT, MetaMooT,
+            or UltiMooT game</h1>
+        <form id="boardGameForm">
+            <div class="game-selection">
+                <label for="game1">Game 1:</label>
+                <select id="game1" name="game1" onchange="calculateTotal()">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+            <div class="game-selection">
+                <label for="game2">Game 2:</label>
+                <select id="game2" name="game2" onchange="calculateTotal()">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+            <div class="game-selection">
+                <label for="game3">Game 3:</label>
+                <select id="game3" name="game3" onchange="calculateTotal()">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+            <div class="total">
+                <h2>Total: $<span id="totalAmount">0.00</span></h2>
+            </div>
+            <button type="button" id="payButton" onclick="payWithPaypal()">Pay</button>
+        </form>
+    </div>
+
+    <script src="https://www.paypal.com/sdk/js?client-id=YOUR_CLIENT_ID"></script>
+    <script src="script.js"></script>
+</body>
+</html>
