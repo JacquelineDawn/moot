@@ -11,9 +11,17 @@
         <h1>
             How to get a MooT, MetaMooT,
             or UltiMooT game</h1>
+
+            <h2>Each game contains 1008 unique question cards
+
+                (as well as a wooden board, playing pieces, and concise rules).
+                
+                MooT is for beginners. MetaMooT is more difficult. UltiMooT is very difficult.</h2>
+                <h2 class="blue">Cost per game is $60 plus postage ($15/game) </h2>
+
         <form id="boardGameForm">
             <div class="game-selection">
-                <label for="game1">Game 1:</label>
+                <label for="game1">Moot:</label>
                 <select id="game1" name="game1" onchange="calculateTotal()">
                     <option value="0">0</option>
                     <option value="1">1</option>
@@ -23,7 +31,7 @@
                 </select>
             </div>
             <div class="game-selection">
-                <label for="game2">Game 2:</label>
+                <label for="game2">MetaMooT:</label>
                 <select id="game2" name="game2" onchange="calculateTotal()">
                     <option value="0">0</option>
                     <option value="1">1</option>
@@ -33,7 +41,7 @@
                 </select>
             </div>
             <div class="game-selection">
-                <label for="game3">Game 3:</label>
+                <label for="game3">UltiMooT:</label>
                 <select id="game3" name="game3" onchange="calculateTotal()">
                     <option value="0">0</option>
                     <option value="1">1</option>
@@ -44,8 +52,12 @@
             </div>
             <div class="total">
                 <h2>Total: $<span id="totalAmount">0.00</span></h2>
-            </div>
-            <button type="button" id="payButton" onclick="payWithPaypal()">Pay</button>
+           
+            <img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_111x69.jpg" alt="PayPal Logo" class="paypal-logo">
+            <button type="button" id="payButton" onclick="payWithPaypal()">PAY</button>
+            
+        </div>
+
         </form>
     </div>
 
